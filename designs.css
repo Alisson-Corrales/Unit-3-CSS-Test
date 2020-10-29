@@ -1,124 +1,627 @@
-html{
-    background-color:  rgb(246, 177, 177);
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 12px;
-}
-article, aside, figcaption, figure,
-footer, header, main, nav, section { 
-    display: block;
-}
- 
-address, article, aside, blockquote, body, cite, 
-div, dl, dt, dd, em, figcaption, figure, footer, 
-h1, h2, h3, h4, h5, h6, header, html, img, 
-li, main, nav, nav a, ol, p, section, span, ul{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;  
-}
-
-/*header styles*/
-header{
-    background-color: white;
-    width: 100%;
-}
-#logoImage{
-    display: block;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-p{
-    font-size: 1.2rem;
-    line-height: 1.4rem;
-    margin: 15px;
-    color: rgb(111, 111, 111);
-}
-
-/*navbar*/
-.top{
-    background-color: rgb(211, 211, 211);
-}
-.top ul{
-    margin: 10px;
-}
-.top a{
-    display: block;
-    color: white;
-    font-size: 1.2rem;
-    text-align: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 0%;
-    padding-right: 0%;
-}
-.top a:hover{
-    color: rgb(220, 27, 27);
-    text-shadow: 0px 0px 2px black, 0px 0px 15px white;
-}
-
-/*spotlight styles*/
-.spotlight{
-    background-color: rgb(171, 171, 171);
-    padding-bottom: 15px;
-    overflow: hidden;
-}
-.spotlight h1{
-    font-size: 2.5rem;
-    text-shadow: white -2px 0px 1px, white -5px 0px 30px;
-    padding-top: 20px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    text-align: right;
-}
-.spotlight img{
-    display: block;
-    width: 35%;
-    float: left;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    margin-left: 15px;
-    
-}
-
-body{
-    line-height: 1.2em;
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1024px;
-    box-shadow: 10px 10px 25px, -10px 10px 25px;
-}
-
-/*images*/
-#twoPeople{
-    float: right;
-    margin-top: 0px;
-    margin-bottom: 120px;
-    margin-right: 0px;
-    margin-left: 50px;
-    transform: rotate(30deg);
-    box-shadow: 10px -10px 30px;
-}
+@media(min-width: 401px){
+    /*general styles*/
+    html{
+        background-color:  rgb(246,177,177);
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 12px;
+    }
+    article, aside, figcaption, figure,
+    footer, header, main, nav, section { 
+        display: block;
+    }
+    address, article, aside, blockquote, body, cite, 
+    div, dl, dt, dd, em, figcaption, figure, footer, 
+    h1, h2, h3, h4, h5, h6, header, html, img, 
+    li, main, nav, nav a, ol, p, section, span, ul{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;  
+    }
+    ul, ol {
+        list-style: none;
+    }
+    nav ul {
+        list-style: none;
+        list-style-image: none;
+    }
+    nav a {
+        text-decoration: none;
+    }
+    body{
+        line-height: 1.2em;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1024px;
+        box-shadow: 10px 10px 25px, -10px 10px 25px;
+    }
+    p{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        margin: 15px;
+    }
+    a{
+        color: rgb(220, 27, 27);
+    }
 
 
-ul, ol {
-    list-style: none;
+    /*header styles*/
+    header{
+        background-color: white;
+        width: 100%;
+    }
+    #logoImage{
+        display: block;
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /*navbar*/
+    .top{
+        background-color: rgb(51, 51, 51);
+    }
+    .top li{
+        margin: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .top li a{
+        display: block;
+        color: white;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .top li a:hover{
+        color: rgb(220, 27, 27);
+        text-shadow: 0px 0px 2px black, 0px 0px 15px white;
+    }
+
+
+    /*spotlight styles*/
+    .spotlight{
+        background-color: rgb(171, 171, 171);
+        padding-bottom: 15px;
+        overflow: hidden;
+    }
+    .spotlight h1{
+        font-size: 2.5rem;
+        text-shadow: white -2px 0px 1px, white -5px 0px 30px;
+        padding-top: 20px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        text-align: right;
+    }
+    .spotlight img{
+        display: block;
+        width: 35%;
+        float: left;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+    .spotlight p{
+        margin-bottom: 0%;
+    }
+
+
+    /*aside styles*/
+    aside{
+        background-color: rgb(211, 211, 211);
+        align-self: flex-start;
+    }
+    aside a:active{
+        color: rgb(220, 27, 27);
+    }
+    aside h1{
+        font-size: 2rem;
+        font-weight: normal;
+        letter-spacing: .04rem;
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-bottom: 25px;
+        margin-left: 0px;
+    }
+    aside img{
+        display: block;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    aside dt, dd{
+        text-align: center;
+    }
+    aside dd{
+        margin-bottom: 20px;
+    }
+    #twoPeople{
+        float: right;
+        margin-top: 0px;
+        margin-bottom: 120px;
+        margin-right: 0px;
+        margin-left: 50px;
+        transform: rotate(30deg);
+        box-shadow: 10px -10px 30px;
+    }
+
+
+    /*footer styles*/
+    footer{
+        width: 100%;
+    }
+    footer p{
+        color: rgb(111, 111, 111);
+        font-size: .9rem;
+        text-align: center;
+        background-color: black;
+        margin: 0;
+        padding-top: 10px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+    #bottom{
+        background-color: rgb(220, 27, 27);
+        color: rgb(111, 111, 111);
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    #bottom li{
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    #bottom ul{
+        flex-shrink: auto;
+        flex-grow: 0;
+        width: 150px;
+    }
+    #bottom ul a{
+        color: white;
+    }
+    }
+
+
+/*
+Html-background = (246, 177, 177)
+Shadow = (51, 51, 51)
+Nav-active = (220, 27, 27)
+Spotlight = (171, 171, 171)
+Text-background = (211, 211, 211)
+Text-color = (111, 111, 111)
+*/
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px){
+    /*general styles*/
+    html{
+        background-color:  rgb(246, 177, 177);
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 12px;
+    }
+    article, aside, figcaption, figure,
+    footer, header, main, nav, section { 
+        display: block;
+    }
+    address, article, aside, blockquote, body, cite, 
+    div, dl, dt, dd, em, figcaption, figure, footer, 
+    h1, h2, h3, h4, h5, h6, header, html, img, 
+    li, main, nav, nav a, ol, p, section, span, ul{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;  
+    }
+    ul, ol {
+        list-style: none;
+    }
+    nav ul {
+        list-style: none;
+        list-style-image: none;
+    }
+    nav a {
+        text-decoration: none;
+    }
+    body{
+        line-height: 1.2em;
+        background-color: rgb(51, 51, 51);
+        margin-left: auto;
+        margin-right: auto;
+        width: 1024px;
+        box-shadow: 10px 10px 25px, -10px 10px 25px;
+    }
+    p{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        margin: 15px;
+    }
+    a{
+        color: rgb(220, 27, 27);
+    }
+
+
+    /*header styles*/
+    header{
+        background-color: white;
+        width: 100%;
+    }
+    #logoImage{
+        display: none;
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /*navbar*/
+    .top{
+        background-color: rgb(51, 51, 51);
+    }
+    .top li{
+        margin: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .top li a{
+        display: block;
+        color: white;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .top li a:hover{
+        color: rgb(220, 27, 27);
+        text-shadow: 0px 0px 2px black, 0px 0px 15px white;
+    }
+
+
+    /*spotlight styles*/
+    .spotlight{
+        display: none;
+        background-color: rgb(171, 171, 171);
+        padding-bottom: 15px;
+        overflow: hidden;
+    }
+    .spotlight h1{
+        font-size: 2.5rem;
+        text-shadow: white -2px 0px 1px, white -5px 0px 30px;
+        padding-top: 20px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        text-align: right;
+    }
+    .spotlight img{
+        display: none;
+        width: 35%;
+        float: left;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+    .spotlight p{
+        margin-bottom: 0%;
+    }
+
+    /*aside styles*/
+    aside{
+        background-color: rgb(211, 211, 211);
+        align-self: flex-start;
+        display: none;
+    }
+    aside a:active{
+        color: rgb(220, 27, 27);
+    }
+    aside h1{
+        font-size: 2rem;
+        font-weight: normal;
+        letter-spacing: .04rem;
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-bottom: 25px;
+        margin-left: 0px;
+    }
+    aside img{
+        display: block;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    aside dt, dd{
+        text-align: center;
+    }
+    aside dd{
+        margin-bottom: 20px;
+    }
+    #twoPeople{
+        display: none;
+        float: right;
+        margin-top: 0px;
+        margin-bottom: 120px;
+        margin-right: 0px;
+        margin-left: 50px;
+        transform: rotate(30deg);
+        box-shadow: 10px -10px 30px;
+    }
+
+    /*footer styles*/
+    footer{
+        width: 100%;
+    }
+    footer p{
+        color: rgb(111, 111, 111);
+        font-size: .9rem;
+        text-align: center;
+        background-color: black;
+        margin: 0;
+        padding-top: 10px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+    #bottom{
+        background-color: rgb(220, 27, 27);
+        color: rgb(111, 111, 111);
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    #bottom li{
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    #bottom ul{
+        flex-shrink: auto;
+        flex-grow: 0;
+        width: 150px;
+    }
+    #bottom ul a{
+        color: white;
+    }
 }
- 
-nav ul {
-    list-style: none;
-    list-style-image: none;
-}
- 
-nav a {
-    text-decoration: none;
-}
+
+
+
+
+
+
+@media(min-width: 401px){
+    /*general styles*/
+    html{
+        background-color:  rgb(246,177,177);
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 12px;
+    }
+    article, aside, figcaption, figure,
+    footer, header, main, nav, section { 
+        display: block;
+    }
+    address, article, aside, blockquote, body, cite, 
+    div, dl, dt, dd, em, figcaption, figure, footer, 
+    h1, h2, h3, h4, h5, h6, header, html, img, 
+    li, main, nav, nav a, ol, p, section, span, ul{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;  
+    }
+    ul, ol {
+        list-style: none;
+    }
+    nav ul {
+        list-style: none;
+        list-style-image: none;
+    }
+    nav a {
+        text-decoration: none;
+    }
+    body{
+        line-height: 1.2em;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1024px;
+        box-shadow: 10px 10px 25px, -10px 10px 25px;
+    }
+    p{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        margin: 15px;
+    }
+    a{
+        color: rgb(220, 27, 27);
+    }
+
+
+    /*header styles*/
+    header{
+        background-color: white;
+        width: 100%;
+    }
+    #logoImage{
+        display: block;
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /*navbar*/
+    .top{
+        background-color: rgb(51, 51, 51);
+    }
+    .top li{
+        margin: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .top li a{
+        display: block;
+        color: white;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .top li a:hover{
+        color: rgb(220, 27, 27);
+        text-shadow: 0px 0px 2px black, 0px 0px 15px white;
+    }
+
+
+    /*spotlight styles*/
+    .spotlight{
+        background-color: rgb(171, 171, 171);
+        padding-bottom: 15px;
+        overflow: hidden;
+    }
+    .spotlight h1{
+        font-size: 2.5rem;
+        text-shadow: white -2px 0px 1px, white -5px 0px 30px;
+        padding-top: 20px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        text-align: right;
+    }
+    .spotlight img{
+        display: block;
+        width: 35%;
+        float: left;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+    .spotlight p{
+        margin-bottom: 0%;
+    }
+
+
+    /*aside styles*/
+    aside{
+        background-color: rgb(211, 211, 211);
+        align-self: flex-start;
+    }
+    aside a:active{
+        color: rgb(220, 27, 27);
+    }
+    aside h1{
+        font-size: 2rem;
+        font-weight: normal;
+        letter-spacing: .04rem;
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-bottom: 25px;
+        margin-left: 0px;
+    }
+    aside img{
+        display: block;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    aside dt, dd{
+        text-align: center;
+    }
+    aside dd{
+        margin-bottom: 20px;
+    }
+    #twoPeople{
+        float: right;
+        margin-top: 0px;
+        margin-bottom: 120px;
+        margin-right: 0px;
+        margin-left: 50px;
+        transform: rotate(30deg);
+        box-shadow: 10px -10px 30px;
+    }
+
+
+    /*footer styles*/
+    footer{
+        width: 100%;
+    }
+    footer p{
+        color: rgb(111, 111, 111);
+        font-size: .9rem;
+        text-align: center;
+        background-color: black;
+        margin: 0;
+        padding-top: 10px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+    #bottom{
+        background-color: rgb(220, 27, 27);
+        color: rgb(111, 111, 111);
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    #bottom li{
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    #bottom ul{
+        flex-shrink: auto;
+        flex-grow: 0;
+        width: 150px;
+    }
+    #bottom ul a{
+        color: white;
+    }
+    }
