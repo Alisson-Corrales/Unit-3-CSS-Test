@@ -68,13 +68,13 @@
     .top{
         background-color: rgb(51, 51, 51);
     }
-    .top li{
+    .top ul li{
         margin: 10px;
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
     }
-    .top li a{
+    .top ul li a{
         display: block;
         color: white;
         font-size: 1.2rem;
@@ -84,7 +84,7 @@
         padding-left: 0%;
         padding-right: 0%;
     }
-    .top li a:hover{
+    .top ul li a:hover{
         color: rgb(220, 27, 27);
         text-shadow: 0px 0px 2px black, 0px 0px 15px white;
     }
@@ -288,27 +288,62 @@ Text-color = (111, 111, 111)
     .top{
         background-color: rgb(51, 51, 51);
     }
-    .top li{
+    .top ul li{
         margin: 10px;
-        display: flex;
-        flex-wrap: nowrap;
+        display: flexbox;
+        flex-wrap: wrap;
+        position: row;
         justify-content: center;
     }
-    .top li a{
+    .top ul li a{
         display: block;
         color: white;
-        font-size: 1.2rem;
-        text-align: center;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        padding-left: 0%;
-        padding-right: 0%;
+        font-size: 2.2rem;
+        flex: 130px;
+        flex-grow: 1;
+        flex-shrink: 1;
     }
-    .top li a:hover{
+    .top ul li a:hover{
         color: rgb(220, 27, 27);
         text-shadow: 0px 0px 2px black, 0px 0px 15px white;
     }
-
+    nav.top ul li:nth-of-type(1){
+    background-image: url("images/cw_image01.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    nav.top ul li:nth-of-type(2){
+    background-image: url("images/cw_image01png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    nav.top ul li:nth-of-type(3){
+    background-image: url("images/cw_image01png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    nav.top ul li:nth-of-type(4){
+    background-image: url("images/cw_image01png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    nav.top ul li:nth-of-type(5){
+    background-image: url("images/cw_image01png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    nav.top ul li:nth-of-type(6){
+    background-image: url("images/cw_image01png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+        
 
     /*spotlight styles*/
     .spotlight{
@@ -336,6 +371,13 @@ Text-color = (111, 111, 111)
     }
     .spotlight p{
         margin-bottom: 0%;
+    }
+    #links{
+        background-color: rgb(220, 27, 27);
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 20px;
     }
 
     /*aside styles*/
@@ -425,10 +467,10 @@ Text-color = (111, 111, 111)
 
 
 
-@media(min-width: 401px){
+@media(min-width: 481px){
     /*general styles*/
     html{
-        background-color:  rgb(246,177,177);
+        background-color: rgb(246,177,177);
         font-family: Verdana, Geneva, sans-serif;
         font-size: 12px;
     }
@@ -460,6 +502,9 @@ Text-color = (111, 111, 111)
         text-decoration: none;
     }
     body{
+        display: flexbox;
+        flex-wrap: wrap;
+        flex-direction: row;
         line-height: 1.2em;
         background-color: white;
         margin-left: auto;
@@ -474,6 +519,9 @@ Text-color = (111, 111, 111)
     }
     a{
         color: rgb(220, 27, 27);
+        flex: 400px;
+        flex-grow: 2;
+        flex-shrink: 1;
     }
 
 
@@ -495,13 +543,21 @@ Text-color = (111, 111, 111)
     .top{
         background-color: rgb(51, 51, 51);
     }
-    .top li{
+    .top ul{
         margin: 10px;
-        display: flex;
-        flex-wrap: nowrap;
+        display: flexbox;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: rgb(51, 51, 51);
         justify-content: center;
+        align-content: center;
     }
-    .top li a{
+    .top ul li{
+        flex: 80px;
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
+    .top ul li a{
         display: block;
         color: white;
         font-size: 1.2rem;
@@ -511,7 +567,7 @@ Text-color = (111, 111, 111)
         padding-left: 0%;
         padding-right: 0%;
     }
-    .top li a:hover{
+    .top ul li a:hover{
         color: rgb(220, 27, 27);
         text-shadow: 0px 0px 2px black, 0px 0px 15px white;
     }
@@ -519,6 +575,7 @@ Text-color = (111, 111, 111)
 
     /*spotlight styles*/
     .spotlight{
+        display: none;
         background-color: rgb(171, 171, 171);
         padding-bottom: 15px;
         overflow: hidden;
@@ -549,6 +606,9 @@ Text-color = (111, 111, 111)
     aside{
         background-color: rgb(211, 211, 211);
         align-self: flex-start;
+        flex: 200px;
+        flex-grow: 1;
+        flex: 2;
     }
     aside a:active{
         color: rgb(220, 27, 27);
@@ -604,6 +664,7 @@ Text-color = (111, 111, 111)
         padding-left: 10px;
     }
     #bottom{
+        display: none;
         background-color: rgb(220, 27, 27);
         color: rgb(111, 111, 111);
         padding: 15px;
